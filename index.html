@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAPPY NAVRATRI</title>
+  <link rel="stylesheet" href="DurgaAssests/DurgaPujaWish.css">
+</head>
+<body>
+  
+  <div class="Body">
+    
+    <marquee behavior="scroll" direction="left" class="m1">
+      <p style="color: red;">Jai Mata Di &nbsp;&nbsp;&nbsp;&nbsp;<bold>Jai Mata Di </bold>&nbsp;&nbsp;&nbsp;&nbsp;Jai Mata Di &nbsp;&nbsp;&nbsp;&nbsp;Jai Mata Di&nbsp;&nbsp;&nbsp;&nbsp;Jai Mata Di</p>
+    </marquee>
+    <div class="left">
+      
+    </div>
+    <div class="content">
+      <marquee behavior="scroll" direction="left"><h3 style="color: red;">JAI MATA DI&nbsp;&nbsp;&nbsp;&nbsp;JAI MATA DI</h3></marquee>
+      <img src="DurgaAssests/subh.png" width="90%" height="auto" alt="Wish From Amitesh Ranjan" style="animation: pulse 3s infinite;">
+      <br>
+      <br>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="DurgaAssests/Durga.jpg" style="max-width: 410px;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="DurgaAssests/durga1.jpg" style="max-width: 410px;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="DurgaAssests/durga2.jpg" style="max-width: 410px;">
+        </div>
+        
+        </div> 
+
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <marquee behavior="scroll" direction="left"><h2 style="color: rgb(68, 149, 241);">Wishing you a happy and prosperous Navratri.</h2></marquee>
+        <marquee behavior="scroll" direction="left"><h3 style="color: cadetblue;">Best Wish from Amitesh Ranjan</h3> </marquee>
+    </div>
+    <div class="right">
+      
+    </div>
+
+    <marquee behavior="scroll" direction="left" class="m1">
+      <p style="color: red;">Jai Mata Di &nbsp;&nbsp;&nbsp;&nbsp;Jai Mata Di &nbsp;&nbsp;&nbsp;&nbsp;Jai Mata Di &nbsp;&nbsp;&nbsp;&nbsp;Jai Mata Di&nbsp;&nbsp;&nbsp;&nbsp;Jai Mata Di</p>
+    </marquee>
+    <div class="Footer">
+      <p class="footp" style="font-size: 20px; color:rgb(0, 0, 0);">Design and developed by Amitesh Ranjan</p>
+      <a href="https://github.com/Amitesh-191885" class="ancher">Github</a>
+    </div>
+    <iframe src="DurgaAssests/songd.mp3" allow="autoplay" id="audio" style="width: 0; height: 0;"></iframe> 
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides(); 
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+  </script>
+</body>
+</html>
